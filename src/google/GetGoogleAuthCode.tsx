@@ -9,6 +9,7 @@ import googleIcon from "../assets/googleIcon.png"
 export const GetGoogleAuthCode = () => {
     const login = (): void => {
 
+        alert(`${window.location.origin}/auth/google`)
         // Step 1: Request permission (Authorization Code) from Authorization Server
         const queryParams = new URLSearchParams({
             client_id: import.meta.env.VITE_GOOGLE_CLIENT_ID,
