@@ -1,6 +1,10 @@
-import { createRoot } from 'react-dom/client'
-import App from './App.tsx'
+import {createRoot} from 'react-dom/client'
+import {GetGoogleAuthCode} from "./google/GetGoogleAuthCode.tsx";
+import {SendGoogleAuthCode} from "./google/SendGoogleAuthCode.tsx";
 
 createRoot(document.getElementById('root')!).render(
-    <App />
+    <>
+        <GetGoogleAuthCode/>
+        <SendGoogleAuthCode/>
+    </>
 )
